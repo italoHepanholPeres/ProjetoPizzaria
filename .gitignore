@@ -1,0 +1,33 @@
+# ===== SEGREDOS =====
+.env
+.env.*
+application.properties
+application.yml
+application-*.properties
+application-*.yml
+
+# ===== JAVA / SPRING =====
+/target
+*.class
+*.jar
+*.war
+*.ear
+
+# ===== LOGS =====
+logs/
+*.log
+
+# ===== IDEs =====
+.vscode/
+.idea/
+*.iml
+.project
+.classpath
+.settings/
+
+# ===== SO =====
+.DS_Store
+Thumbs.db
+*~
+.Trash-*
+
