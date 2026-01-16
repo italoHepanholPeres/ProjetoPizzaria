@@ -1,0 +1,13 @@
+{
+  "folders": [
+	{
+		"path": "."
+	},
+	{
+		"path": "../PizzariaFront"
+	}
+],
+  "settings": {
+    "java.compile.nullAnalysis.mode": "automatic"
+  }
+}
