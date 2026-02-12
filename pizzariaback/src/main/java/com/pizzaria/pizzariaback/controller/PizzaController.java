@@ -29,7 +29,7 @@ public class PizzaController {
 
     
     @PostMapping
-    public ResponseEntity<PizzaResponseDTO> createPizza(@RequestBody PizzaRequestDTO pizzaToSave){
+    public ResponseEntity<PizzaResponseDTO> savePizza(@RequestBody PizzaRequestDTO pizzaToSave){
         PizzaResponseDTO savedPizza = pizzaService.save(pizzaToSave);
         return ResponseEntity
                 .status(HttpStatus.CREATED)
