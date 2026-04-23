@@ -29,4 +29,12 @@ public class PizzaService {
 
         return PizzaMapper.toDto(savedPizza);
     }
+
+    public void deleteByID(Long id){
+        if(!pizzaRepository.existsById(id)){
+            throw new RuntimeException("Pizza não encontrada");
+        }
+
+        pizzaRepository.deleteById(id);
+    }
 }
