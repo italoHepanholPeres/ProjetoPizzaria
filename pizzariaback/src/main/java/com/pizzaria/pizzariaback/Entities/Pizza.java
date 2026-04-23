@@ -33,6 +33,8 @@ public class Pizza {
     private String description;
     @Column(nullable = false)
     private Boolean visible;
+    @Column(nullable = false)
+    private String photo;
 
 
 }
