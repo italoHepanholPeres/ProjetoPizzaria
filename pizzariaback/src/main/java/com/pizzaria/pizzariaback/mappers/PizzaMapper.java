@@ -12,6 +12,7 @@ public class PizzaMapper {
         pizza.setPrice(dto.price());
         pizza.setDescription(dto.description());
         pizza.setVisible(dto.visible());
+        pizza.setPhoto(dto.photo());
         return pizza;
     }
 

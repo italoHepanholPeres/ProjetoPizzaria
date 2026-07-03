@@ -7,6 +7,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.Lob;
 import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -29,11 +30,14 @@ public class Pizza {
     private String name;
     @Column(nullable = false)
     private BigDecimal price;
+    @Lob
     @Column(nullable = false, length = 255)
     private String description;
     @Column(nullable = false)
     private Boolean visible;
-    @Column(nullable = false)
+    //@lob: Diz pro hibernate que o atributo não é um VARCHAR(255)
+    @Lob
+    @Column(nullable = false, columnDefinition = "TEXT")
     private String photo;
 
 
